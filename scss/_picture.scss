@@ -1,0 +1,39 @@
+.picture-plus-comments {
+	img {
+		width: 300px;
+	}
+	figcaption {
+		width: 280px;
+		span {
+			float: right;
+			&.heart-full:before {
+				margin: 5px;
+				font-family: 'font-awesome';
+				content: "\f004";
+				color: #D63232;
+			}
+			&.heart:before {
+				margin: 5px;
+				font-family: 'font-awesome';
+				content: "\f08a";
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.comments {
+			font-size: 14px;
+			ul {
+				margin: 5px 0;
+				padding: 0;
+				li {
+					word-break: break-word;
+					list-style: none;
+					font-size: 12px;
+					border-top: 1px dashed lightgrey;
+					padding: 5px 0px;
+				}					
+			}
+		}
+	}
+}

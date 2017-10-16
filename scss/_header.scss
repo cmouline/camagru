@@ -1,0 +1,31 @@
+.main-header {
+	background-color: $theme-color;
+	height: 250px;
+	position: relative;
+	.logo {
+		float: left;
+		height: inherit;
+	}
+	h1 {
+		position: absolute;
+		bottom: 0;
+		display: inline-block;
+		margin-left: 35px;
+		font-size: 4em;
+		color: whitesmoke;
+	}
+}
+@media screen and (max-width: 640px) {
+	.main-header {
+		height: 50px;
+		.logo {
+			display: none;
+		}
+		h1 {
+			position: initial;
+			margin: auto;
+			padding-left: 5px;
+			font-size: 2em;			
+		}
+	}
+}

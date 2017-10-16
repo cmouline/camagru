@@ -1,0 +1,44 @@
+nav {
+	list-style: none;
+	ul {
+		padding: 15px 0px 15px 40px;
+		margin: 0px;
+		li {
+			display: inline-block;
+			margin: 0px 20px;
+			a {
+				line-height: 44px;
+			}
+		}
+	}
+	&.main-nav {
+		ul {
+			border-bottom: 5px solid $theme-color;
+			&:before{
+				font-family: 'font-awesome';
+				content: "\f083";
+				font-size: 28px;
+			}
+		}
+	}
+	&.footer-nav {
+		margin-top: 50px;
+		ul {
+			text-align: center;
+			border-top: 5px solid $theme-color;
+		}		
+	}
+}
+@media screen and (max-width: 640px) {
+	nav {
+		ul {
+			padding: 15px 0px 15px 15px;
+			li {
+				margin: 0px 10px;
+				a {
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}

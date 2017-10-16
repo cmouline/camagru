@@ -1,0 +1,61 @@
+.register {
+	p {
+		text-align: center;
+		margin: 0;
+		padding: 20px 0;
+		color: white;
+	}
+	.register-form-section {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		form {
+			margin: 20px;
+			width: 250px;
+			border-top: 1px dashed lightgrey;
+			.user:before {
+				display: inline-block;
+				width: 20px;
+				font-family: "font-awesome";
+				content: "\f007";
+				text-align: center;
+			}
+			.email:before {
+				display: inline-block;
+				width: 20px;
+				font-family: "font-awesome";
+				content: "\f0e0";
+				text-align: center;
+			}
+			.unlock:before {
+				display: inline-block;
+				width: 20px;
+				font-family: "font-awesome";
+				content: "\f13e";
+				text-align: center;
+				font-size: 18px;
+			}
+			.lock:before {
+				display: inline-block;
+				width: 20px;
+				font-family: "font-awesome";
+				content: "\f023";
+				text-align: center;
+				font-size: 18px;
+			}
+			input {
+				padding: 5px;
+				margin: 5px;
+				&.validate {
+					margin-left: 25px;
+				}
+			}
+		}
+		.instruction {
+			display: block;
+			font-size: 12px;
+			margin-left: 25px;
+		}
+	}
+}
+

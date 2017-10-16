@@ -1,0 +1,20 @@
+.gallery {
+	#gallery-mosaic {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		textarea {
+			color: rgb(0, 20, 25);
+			resize: none;
+			font-size: 10px;
+			width: 245px;
+		}
+		.send:before {
+			float: right;
+			line-height: 20px;
+			margin: 5px;
+			font-family: 'font-awesome';
+			content: "\f1d8";
+		}
+	}
+}

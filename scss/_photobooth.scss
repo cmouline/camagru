@@ -1,0 +1,102 @@
+.photo-booth {
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	aside {
+		background-color: white;
+		header {
+			padding: 0 10px;
+		}
+		.radio-buttons-group {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			height: 450px;
+			.miniature {
+				vertical-align: middle;
+				input {
+					display: inline-block;
+					vertical-align: middle;				
+				}
+				.filter-miniature {
+					display: inline-block;
+					vertical-align: middle;
+					width: 150px;
+					border: 1px solid grey;
+					margin-left: 5px;
+				}			
+			}
+		}
+		.last-pic-group {
+			height: 500px;
+			overflow: scroll;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.last-pic {
+				margin: 0;
+				img {
+					width: 150px;
+				}
+				.picture-title {
+					font-size: 12px;
+				}
+			}			
+		}
+	}
+	section {
+		width: 500px;
+		background-color: white;
+		#video-div {
+			position: relative;
+			#video-element {
+				width: 500px;
+				height: 375px;
+				background-color: #666;
+			}
+			.filter-on-video {
+				display: none;
+				position: absolute;
+				top: 0;
+			}
+			#no-webcam {
+				font-size: 14px;
+				text-align: center;
+				padding: 10px 0;
+			}
+		}
+		#startbutton {
+			display: block;
+			width: 100%;
+			.shoot:before {
+				font-family: 'font-awesome';
+				content: "\f083";
+				font-size: 34px;
+			}
+		}
+	}
+	.top-photo-booth {
+		line-height: 30px;
+		background-color: rgba(0, 20, 25, 0.9);
+		text-align: center;
+		color: whitesmoke;
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.photo-booth {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		section {
+			width: 375px;
+			#video-div {
+				#video-element {
+					width: 375px;
+					height: 375px;
+				}
+			}
+		}
+	}
+}
